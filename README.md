@@ -2,7 +2,7 @@
 
 ## Intro
 
-This is the UI part of a headunit project from OpenLeo, based on python and kivy, it looks like this:
+This is the UI part of a headunit project from OpenLeo, based on python and kivy, it looks like this (low framerate only due to recording in gif):
 
 ![headunit preview image](.github/preview.gif?raw=true)
 
