@@ -1,4 +1,4 @@
-# HeadUnit UI
+# HeadUnit UI (Come discuss about it on our [Discord](https://discord.gg/RNkHucE7jN)!)
 
 ## Intro
 
