@@ -2,7 +2,9 @@
 
 ## Intro
 
-This is the UI part of a headunit project from OpenLeo, based on python and kivy
+This is the UI part of a headunit project from OpenLeo, based on python and kivy, it looks like this:
+
+![headunit preview image](.github/preview.gif?raw=true)
 
 ## Design (and integration in the whole head unit project)
 
