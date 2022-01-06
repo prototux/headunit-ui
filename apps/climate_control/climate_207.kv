@@ -1,0 +1,78 @@
+FloatLayout:
+	size_hint: 1, 1
+	# Main layout
+	BoxLayout:
+		orientation: 'horizontal'
+
+		# Left seat control
+		BoxLayout:
+			orientation: 'vertical'
+			size_hint: 0.4, 1
+			Button:
+				text: 'Temp +1'
+			Label:
+				text: '25c'
+			Button:
+				text: 'Temp -1'
+
+		# Common controls
+		BoxLayout:
+			orientation: 'vertical'
+
+			BoxLayout:
+				orientation: 'horizontal'
+				ToggleButton:
+					text: 'ON'
+				ToggleButton:
+					text: 'D'
+				ToggleButton:
+					text: 'M'
+				ToggleButton:
+					text: 'U'
+				ToggleButton:
+					text: 'D+M'
+				ToggleButton:
+					text: 'D+U'
+
+			BoxLayout:
+				orientation: 'horizontal'
+				ToggleButton:
+					text: 'Front defrost'
+				ToggleButton:
+					text: 'Rear defrost'
+				ToggleButton:
+					text: 'AC'
+				ToggleButton:
+					text: 'Recycling'
+
+			BoxLayout:
+				orientation: 'horizontal'
+				ToggleButton:
+					text: 'Auto'
+				ToggleButton:
+					text: 'F1'
+				ToggleButton:
+					text: 'F2'
+				ToggleButton:
+					text: 'F3'
+				ToggleButton:
+					text: 'F4'
+				ToggleButton:
+					text: 'F5'
+				ToggleButton:
+					text: 'F6'
+				ToggleButton:
+					text: 'F7'
+				ToggleButton:
+					text: 'F8'
+
+		# Right seat control
+		BoxLayout:
+			orientation: 'vertical'
+			size_hint: 0.4, 1
+			Button:
+				text: 'Temp +1'
+			Label:
+				text: '25c'
+			Button:
+				text: 'Temp -1'

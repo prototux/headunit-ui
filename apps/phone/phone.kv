@@ -1,0 +1,53 @@
+#:import DampedScrollEffect kivy.effects.dampedscroll.DampedScrollEffect
+#:import Button kivy.uix.button.Button
+FloatLayout:
+	size_hint: 1, 1
+	# Main layout
+	BoxLayout:
+		orientation: 'horizontal'
+
+		BoxLayout:
+			orientation: 'vertical'
+
+			Label:
+				text: '0102030405'
+				size_hint_y: 0.15
+			GridLayout:
+				cols: 3
+				Button:
+					text: '1'
+				Button:
+					text: '2'
+				Button:
+					text: '3'
+				Button:
+					text: '4'
+				Button:
+					text: '5'
+				Button:
+					text: '6'
+				Button:
+					text: '7'
+				Button:
+					text: '8'
+				Button:
+					text: '9'
+				Button:
+					text: '*'
+				Button:
+					text: '0'
+				Button:
+					text: '#'
+
+		ScrollView:
+			do_scroll_x: False
+			do_scroll_y: True
+			effect_cls: DampedScrollEffect
+
+			GridLayout:
+				cols: 1
+				size_hint_y: None
+				height: self.minimum_height
+
+				on_parent:
+					for i in range(100): self.add_widget(Button(text='contact {}'.format(str(i)), size_hint_y=None))

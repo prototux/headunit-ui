@@ -1,0 +1,12 @@
+apps:
+  - music
+  - climate_control
+  - navigation
+  - phone
+  - test
+
+shortcuts:
+  - music
+  - climate_control
+  - navigation
+  - phone

@@ -1,0 +1,36 @@
+BoxLayout:
+    orientation: 'vertical'
+
+    ScreenManager:
+        id: sm
+        size_hint: 1, 1
+
+        MainScreen:
+            name: "main"
+
+        AppsScreen:
+            name: "apps"
+            GridLayout:
+                id: apps_grid
+                cols: 5
+                rows: 4
+                padding: 30
+                spacing: 50, 30
+                size_hint: 1, 1
+                canvas.before:
+                    Color:
+                        rgb: 0,0,0
+                    Rectangle:
+                        pos: self.pos
+                        size: self.size
+
+    BoxLayout:
+		id: bar_icons
+        size_hint: 1, 0.2
+        orientation: 'horizontal'
+        canvas.before:
+            Color:
+                rgb: 0.12,0.12,0.12
+            Rectangle:
+                pos: self.pos
+                size: self.size

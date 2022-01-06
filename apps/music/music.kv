@@ -1,0 +1,82 @@
+FloatLayout:
+	size_hint: 1, 1
+	Image:
+		id: background
+		source: 'img/background.png'
+		center_x: self.center_x
+		center_y: self.center_y
+		allow_stretch: True
+		keep_ratio: False
+
+	BoxLayout:
+		orientation: 'vertical'
+
+		ScreenManager:
+			id: music_sm
+			Screen:
+				name: 'music_infos'
+				BoxLayout:
+					orientation: 'horizontal'
+
+					Image:
+						id: album_art
+						source: 'img/album.png'
+
+					BoxLayout:
+						orientation: 'vertical'
+
+						Label:
+							text: 'Track name'
+							font_size: 40
+							halign: 'left'
+
+						Label:
+							text: 'Track artist'
+							font_size: 30
+
+						Label:
+							text: 'Playlist name'
+							font_size: 20
+
+			Screen:
+				name: 'playlists'
+				ScrollView:
+					do_scroll_x: False
+					do_scroll_y: True
+
+					GridLayout:
+						id: playlists_list
+						cols: 1
+						size_hint_y: None
+						spacing: 10
+						padding: 10
+						height: self.minimum_height
+
+
+		AnchorLayout:
+			anchor_x: 'center'
+			size_hint: 1, .4
+			BoxLayout:
+				orientation: 'horizontal'
+				size_hint: .8, .6
+
+				Button:
+					text: 'music'
+					on_press: music_sm.current = 'playlists' if music_sm.current == 'music_infos' else 'music_infos'
+					on_press: music_sm.transition.direction = 'right' if music_sm.current == 'music_infos' else 'left'
+
+				Button:
+					text: 'prev'
+				Button:
+					text: 'p/p'
+				Button:
+					text: 'next'
+
+				BoxLayout:
+					orientation: 'vertical'
+					Button:
+						text: 'vol up'
+					Button:
+						text: 'vol down'
+
+

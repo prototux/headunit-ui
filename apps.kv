@@ -1,0 +1,14 @@
+<AppsScreen>:
+	GridLayout:
+		id: apps_grid
+		cols: 5
+		rows: 4
+		padding: 30
+		spacing: 50, 30
+		size_hint: 1, 1
+		canvas.before:
+			Color:
+				rgb: 0,0,0
+			Rectangle:
+				pos: self.pos
+				size: self.size
