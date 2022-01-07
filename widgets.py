@@ -8,7 +8,7 @@ from kivy.uix.screenmanager import Screen
 class AppsScreen(Screen):
     pass
 
-class ImaeButton(ButtonBehavior, RelativeLayout):
+class ImageButton(ButtonBehavior, RelativeLayout):
     def __init__(self, app=None, **kwargs):
         super(ImageButton, self).__init__(**kwargs)
 
